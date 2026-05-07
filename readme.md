@@ -1,7 +1,7 @@
-#  Autoškola DrivePro – Návrh webových stránek
+#  Autoškola Chládek – Návrh webových stránek
 
 ##  Úvod
-Tento projekt představuje návrh struktury webových stránek pro fiktivní autoškolu **DrivePro**.  
+Tento projekt představuje návrh struktury webových stránek pro fiktivní autoškolu *Chládek*.  
 Cílem je vytvořit přehledný web s minimálně 10 podstránkami, který obsahuje blog, kontaktní formulář a další povinné sekce.
 
 ---
@@ -12,16 +12,14 @@ Home
 │
 ├── O nás
 ├── Kurzy
+├──|── A
+├──|── B
+├──|── C
+├──|── D
+├──|── T
 ├── Ceník
-├── Rozvrh jízd
 ├── Přihláška
-├── Blog
-│ ├── Článek 1
-│ ├── Článek 2
-│ └── Článek 3
-├── Galerie
 ├── Kontakt
-├── Reference
 └── FAQ
 
 
@@ -46,10 +44,11 @@ Sekce představuje autoškolu:
 
 ##  Kurzy
 Přehled nabízených kurzů s odkazy na podstránky jednotlivých kurzů:
-- skupina B –> popis podmínek pro přijetí a splnění kurzu, cena, atd.
-- skupina A –> popis podmínek pro přijetí a splnění kurzu, cena, atd.
-- skupina C -> popis podmínek pro přijetí a splnění kurzu, cena, atd.
-- skupina D -> popis podmínek pro přijetí a splnění kurzu, cena, atd.
+- skupina B –> popis podmínek pro přijetí a splnění kurzu, cena, vozidla atd.
+- skupina A –> popis podmínek pro přijetí a splnění kurzu, cena, vozidla atd.
+- skupina C -> popis podmínek pro přijetí a splnění kurzu, cena, vozidla atd.
+- skupina D -> popis podmínek pro přijetí a splnění kurzu, cena, vozidla atd.
+- skupina T -> popis podmínek pro přijetí a splnění kurzu, cena, vozidla atd.
 
 Popis průběhu kurzu:
 1. Teoretická výuka  
