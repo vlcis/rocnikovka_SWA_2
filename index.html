@@ -1,607 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Autoškola Chládek</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.svg" alt="Logo" />
+        </a>
 
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.svg" alt="Logo">
-            </a>
+        <!-- Hamburger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Hamburger -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Dropdown O nás -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                O nás
+              </a>
 
-                <span class="navbar-toggler-icon"></span>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="html/jak-prihlasit.html">
+                    Jak se přihlásit
+                  </a>
+                </li>
 
-            </button>
+                <li>
+                  <a class="dropdown-item" href="html/prubeh-vyuky.html">
+                    Jak probíhá výuka
+                  </a>
+                </li>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+                <li>
+                  <a class="dropdown-item" href="html/blog-recenze.html">
+                    Blog a recenze
+                  </a>
+                </li>
 
-                <ul class="navbar-nav ms-auto">
+                <li>
+                  <a class="dropdown-item" href="html/instruktori.html">
+                    Instruktoři
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-                    <!-- Dropdown O nás -->
-                    <li class="nav-item dropdown">
+            <!-- Dropdown skupiny -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Skupiny ŘO
+              </a>
 
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="html/A.html"> Skupina A </a>
+                </li>
 
-                            O nás
+                <li>
+                  <a class="dropdown-item" href="html/B.html"> Skupina B </a>
+                </li>
 
-                        </a>
+                <li>
+                  <a class="dropdown-item" href="html/C.html"> Skupina C </a>
+                </li>
 
-                        <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="html/D.html"> Skupina D </a>
+                </li>
 
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Jak se přihlásit
-                                </a>
-                            </li>
+                <li>
+                  <a class="dropdown-item" href="html/T.html"> Skupina T </a>
+                </li>
 
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Jak probíhá výuka
-                                </a>
-                            </li>
+                <li>
+                  <a class="dropdown-item" href="html/E.html"> Skupina E </a>
+                </li>
+              </ul>
+            </li>
 
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Instruktoři
-                                </a>
-                            </li>
+            <!-- Odkazy -->
+            <li class="nav-item">
+              <a class="nav-link" href="html/cenik.html"> Ceník </a>
+            </li>
 
-                        </ul>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/prihlaska.html"> Přihláška </a>
+            </li>
 
-                    <!-- Dropdown skupiny -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-
-                            Skupiny ŘO
-
-                        </a>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Skupina A
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Skupina B
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Skupina C
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Skupina D
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Skupina T
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                    <!-- Odkazy -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Ceník
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Přihláška
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Kontakt
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="html/kontakt.html"> Kontakt </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
+      <div class="container-content">
+        <img src="img/autoskola-main.jpg" alt="Autoškola" />  
+        <h1>Autoškola Triumf</h1>
 
-        <div class="container-content">
+        <p>
+          Naučíme vás řídit bezpečně, sebevědomě a bez stresu. Profesionální
+          instruktoři, moderní vozidla a individuální přístup.
+        </p>
 
-            <h1>
-                Autoškola Chládek
-            </h1>
+        
 
-            <p>
-                Naučíme vás řídit bezpečně, sebevědomě a bez stresu.
-                Profesionální instruktoři, moderní vozidla a individuální přístup.
-            </p>
-
-            <a href="#" class="btn-main">
-                Přihlásit se
-            </a>
-
-            <img src="assets/images/hero.jpg" alt="Autoškola">
-
-        </div>
-
+        
+      </div>
     </section>
 
     <!-- KURZY -->
     <section>
+      <div class="container-content">
+        <h2>Nabízíme vícvik všech skupin včetně podskupin.</h2>
 
-        <div class="container-content">
+        <div class="course-grid">
+          <!-- A -->
+          <div class="course-card">
+            <img src="img/autoskola-A.jpg" alt="Skupina A" />
 
-            <h2>
-                Skupiny řidičského oprávnění
-            </h2>
+            <div class="course-content">
+              <h3>Skupina A</h3>
 
-            <p class="section-text">
-                Nabízíme výuku a výcvik všech skupin řidičského oprávnění.
-            </p>
+              <p>Motocykly všech kategorií.</p>
 
-            <div class="course-grid">
-
-                <!-- A -->
-                <div class="course-card">
-
-                    <img src="assets/images/skupina-a.jpg" alt="Skupina A">
-
-                    <div class="course-content">
-
-                        <h3>Skupina A</h3>
-
-                        <p>
-                            Motocykly všech kategorií.
-                        </p>
-
-                        <a href="#" class="btn-main">
-                            Info a ceny
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- B -->
-                <div class="course-card">
-
-                    <img src="assets/images/skupina-b.jpg" alt="Skupina B">
-
-                    <div class="course-content">
-
-                        <h3>Skupina B</h3>
-
-                        <p>
-                            Osobní automobily do 3,5 t.
-                        </p>
-
-                        <a href="#" class="btn-main">
-                            Info a ceny
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- C -->
-                <div class="course-card">
-
-                    <img src="assets/images/skupina-c.jpg" alt="Skupina C">
-
-                    <div class="course-content">
-
-                        <h3>Skupina C</h3>
-
-                        <p>
-                            Nákladní vozidla a profesní výcvik.
-                        </p>
-
-                        <a href="#" class="btn-main">
-                            Info a ceny
-                        </a>
-
-                    </div>
-
-                </div>
-
+              <a href="html/A.html" class="btn-main"> Info a ceny </a>
             </div>
+          </div>
 
+          <!-- B -->
+          <div class="course-card">
+            <img src="img/autoskola-main.jpg" alt="Skupina B" />
+
+            <div class="course-content">
+              <h3>Skupina B</h3>
+
+              <p>Osobní automobily do 3,5 t.</p>
+
+              <a href="html/B.html" class="btn-main"> Info a ceny </a>
+            </div>
+          </div>
+
+          <!-- C -->
+          <div class="course-card">
+            <img src="img/autoskola-C.jpg" alt="Skupina C" />
+
+            <div class="course-content">
+              <h3>Skupina C</h3>
+
+              <p>Nákladní vozidla a profesní výcvik.</p>
+
+              <a href="html/C.html" class="btn-main"> Info a ceny </a>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="img/autoskola-D.jpg" alt="Skupina C" />
+          <div class="course-content">
+              <h3>Skupina D</h3>
+
+              <p>Autobus pro držitele skupiny C i bez ní.</p>
+
+              <a href="html/D.html" class="btn-main"> Info a ceny </a>
+            </div>
+          </div>
+    
+          <div class="course-card">
+            <img src="img/autoskola-T.jpg" alt="Skupina T" />
+          <div class="course-content">
+              <h3>Skupina T</h3>
+
+              <p>Traktor s jednoosou i dvouosou vlečkou.</p>
+
+              <a href="html/T.html" class="btn-main"> Info a ceny </a>
+            </div>
         </div>
+        <div class="course-card">
+            <img src="img/autoskola-B+E.jpg" alt="Skupina E" />
+            <div class="course-content">
+              <h3>Skupina E</h3>
 
+              <p>Těžší přívěsy za vozidla kategorií B, C, D.</p>
+
+              <a href="html/E.html" class="btn-main"> Info a ceny </a>
+            </div>
+        </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- VÝHODY -->
     <section>
+      <div class="container-content">
+        <h2>Proč si vybrat nás?</h2>
 
-        <div class="container-content">
+        <div class="features">
+          <div class="feature-box">
+            <h3>Zkušení instruktoři</h3>
 
-            <h2>
-                Proč si vybrat nás?
-            </h2>
+            <p>Dlouholetá praxe a individuální přístup.</p>
+          </div>
 
-            <div class="features">
+          <div class="feature-box">
+            <h3>Moderní vozidla</h3>
 
-                <div class="feature-box">
+            <p>Pravidelně obnovovaný vozový park.</p>
+          </div>
 
-                    <h3>
-                        Zkušení instruktoři
-                    </h3>
+          <div class="feature-box">
+            <h3>Vysoká úspěšnost</h3>
 
-                    <p>
-                        Dlouholetá praxe a individuální přístup.
-                    </p>
-
-                </div>
-
-                <div class="feature-box">
-
-                    <h3>
-                        Moderní vozidla
-                    </h3>
-
-                    <p>
-                        Pravidelně obnovovaný vozový park.
-                    </p>
-
-                </div>
-
-                <div class="feature-box">
-
-                    <h3>
-                        Vysoká úspěšnost
-                    </h3>
-
-                    <p>
-                        Kvalitní příprava na závěrečné zkoušky.
-                    </p>
-
-                </div>
-
-            </div>
-
+            <p>Kvalitní příprava na závěrečné zkoušky.</p>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <!-- JAK PROBÍHÁ VÝUKA -->
     <section>
+      <div class="container-content">
+        <h2>Jak probíhá výuka?</h2>
 
-        <div class="container-content">
+        <ol>
+          <li>Teoretická příprava - moderně vybavená učebna.</li>
 
-            <h2>
-                Jak probíhá výuka?
-            </h2>
+          <li>Praktické jízdy - s pohodovými a zkušenými instruktory</li>
 
-            <ol>
-
-                <li>
-                    Teoretická příprava
-                </li>
-
-                <li>
-                    Praktické jízdy
-                </li>
-
-                <li>
-                    Závěrečná zkouška
-                </li>
-
-            </ol>
-
-        </div>
-
+          <li>Závěrečná zkouška</li>
+        </ol>
+      </div>
     </section>
 
-    <!-- CENÍK -->
-    <section>
 
-        <div class="container-content">
-
-            <h2>
-                Ceník kurzů
-            </h2>
-
-            <table>
-
-                <tr>
-
-                    <th>
-                        Kurz
-                    </th>
-
-                    <th>
-                        Cena
-                    </th>
-
-                    <th>
-                        Sleva
-                    </th>
-
-                    <th>
-                        Výsledná cena
-                    </th>
-
-                </tr>
-
-                <tr>
-
-                    <td>
-                        Skupina A
-                    </td>
-
-                    <td>
-                        18 000 Kč
-                    </td>
-
-                    <td>
-                        2 000 Kč
-                    </td>
-
-                    <td>
-                        16 000 Kč
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td>
-                        Skupina B
-                    </td>
-
-                    <td>
-                        20 000 Kč
-                    </td>
-
-                    <td>
-                        2 000 Kč
-                    </td>
-
-                    <td>
-                        18 000 Kč
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td>
-                        Skupina C
-                    </td>
-
-                    <td>
-                        35 000 Kč
-                    </td>
-
-                    <td>
-                        5 000 Kč
-                    </td>
-
-                    <td>
-                        30 000 Kč
-                    </td>
-
-                </tr>
-
-            </table>
-
-        </div>
-
-    </section>
-
-    <!-- FORMULÁŘ -->
-    <section>
-
-        <div class="container-content">
-
-            <h2>
-                Přihláška
-            </h2>
-
-            <form>
-
-                <label>
-                    Jméno a příjmení
-                </label>
-
-                <input type="text" required>
-
-                <label>
-                    E-mail
-                </label>
-
-                <input type="email" required>
-
-                <label>
-                    Telefon
-                </label>
-
-                <input type="tel" required>
-
-                <label>
-                    Výběr kurzu
-                </label>
-
-                <select>
-
-                    <option>
-                        Skupina A
-                    </option>
-
-                    <option>
-                        Skupina B
-                    </option>
-
-                    <option>
-                        Skupina C
-                    </option>
-
-                    <option>
-                        Skupina D
-                    </option>
-
-                </select>
-
-                <label>
-                    Datum zahájení
-                </label>
-
-                <input type="date">
-
-                <label>
-                    Poznámka
-                </label>
-
-                <textarea rows="5"></textarea>
-
-                <button type="submit" class="btn-main">
-                    Odeslat přihlášku
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- KONTAKT -->
-    <section>
-
-        <div class="container-content">
-
-            <h2>
-                Kontakt
-            </h2>
-
-            <p>
-                Autoškola Chládek
-            </p>
-
-            <p>
-                Brno, Česká republika
-            </p>
-
-            <p>
-                Email: info@autoskolachladek.cz
-            </p>
-
-            <p>
-                Telefon: +420 123 456 789
-            </p>
-
-        </div>
-
-    </section>
 
     <!-- FAQ -->
     <section>
+      <div class="container-content">
+        <h2>FAQ</h2>
 
-        <div class="container-content">
+        <h3>Jak dlouho trvá kurz?</h3>
 
-            <h2>
-                FAQ
-            </h2>
+        <p>Standardně 2–3 měsíce.</p>
 
-            <h3>
-                Jak dlouho trvá kurz?
-            </h3>
+        <h3>Kolik stojí kurz?</h3>
 
-            <p>
-                Standardně 2–3 měsíce.
-            </p>
+        <p>Cena závisí na skupině řidičského oprávnění.</p>
 
-            <h3>
-                Kolik stojí kurz?
-            </h3>
+        <h3>Kolik jízd je v ceně?</h3>
 
-            <p>
-                Cena závisí na skupině řidičského oprávnění.
-            </p>
+        <p>Všechny povinné jízdy dle zákona.</p>
 
-            <h3>
-                Kolik jízd je v ceně?
-            </h3>
+        <h3>Co potřebuji k přihlášení?</h3>
 
-            <p>
-                Všechny povinné jízdy dle zákona.
-            </p>
-
-            <h3>
-                Co potřebuji k přihlášení?
-            </h3>
-
-            <p>
-                Občanský průkaz a zdravotní posudek.
-            </p>
-
-        </div>
-
+        <p>Občanský průkaz a zdravotní posudek.</p>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
+<footer>
+  
+    <div class="footer-info">
+      <p>
+        <strong>Autoškola Triumf</strong>
+      </p>
 
-        <p>
-            <strong>Autoškola Chládek</strong>
-        </p>
+      <p>
+        Dominikánské náměstí 196/1<br />
+        602 00 Brno-město
+      </p>
 
-        <p>
-            Brno, Česká republika
-        </p>
+      <p>autoskolatriumf@seznam.cz</p>
 
-        <p>
-            info@autoskolachladek.cz
-        </p>
+      <p>+420 123 456 789</p>
 
-        <p>
-            +420 123 456 789
-        </p>
+      <p>© 2026 Autoškola Triumf</p>
+    </div>
 
-        <p>
-            © 2026 Autoškola Chládek
-        </p>
-
-    </footer>
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps?q=Dominikánské+náměstí+196/1+Brno&output=embed"
+        width="100%"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  
+</footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
