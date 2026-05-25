@@ -70,16 +70,16 @@ body {
 }
 
 /* =========================
-   HERO SEKCE
+   Obsah-main SEKCE
 ========================= */
 
-.hero {
+.obsah-main {
     padding: 100px 0;
     text-align: center;
     background: linear-gradient(to bottom, #f8fbff, #ffffff);
 }
 
-.hero h1 {
+.obsah-main h1 {
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
@@ -87,14 +87,14 @@ body {
     color: #0f172a;
 }
 
-.hero p {
+.obsah-main p {
     font-size: 1.2rem;
     max-width: 850px;
     margin: auto;
     color: #475569;
 }
 
-.hero img {
+.obsah-main img {
     width: 100%;
     margin-bottom: 80px;
     border-radius: 24px;
@@ -333,7 +333,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
 
-    .hero h1 {
+    .obsah-main h1 {
         font-size: 2.5rem;
     }
 
@@ -341,7 +341,7 @@ footer a:hover {
         font-size: 2rem;
     }
 
-    .hero {
+    .obsah-main {
         padding: 70px 0;
     }
 
