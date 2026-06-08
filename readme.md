@@ -1,7 +1,7 @@
-#  Autoškola Chládek – Návrh webových stránek
+#  Autoškola Triumf – Návrh webových stránek -> https://rocnikovka-swa-2.vercel.app/
 
 ##  Úvod
-Tento projekt představuje návrh struktury webových stránek pro fiktivní autoškolu *Chládek*.  
+Tento projekt představuje návrh struktury webových stránek pro fiktivní autoškolu *Triumf*.  
 Cílem je vytvořit přehledný web s minimálně 10 podstránkami, který obsahuje blog, kontaktní formulář a další povinné sekce.
 
 ---
@@ -11,6 +11,9 @@ Cílem je vytvořit přehledný web s minimálně 10 podstránkami, který obsah
 Home
 │
 ├── O nás
+├──|── Jak probíhá výuka
+├──|── Blog a recenze
+├──|── Instruktoři
 ├── Kurzy
 ├──|── A
 ├──|── B
@@ -20,7 +23,7 @@ Home
 ├── Ceník
 ├── Přihláška
 ├── Kontakt
-└── FAQ
+
 
 
 ---
@@ -36,9 +39,9 @@ Hlavní stránka slouží jako úvod do webu. Obsahuje:
 
 ##  O nás
 Sekce představuje autoškolu:
-- historie a vznik  
-- představení instruktorů  
-- výhody (např. zkušenosti, úspěšnost, individuální přístup)  
+- Jak probíhá výuka -> popis výuky teorie, jízd a průběhu závěrečných zkoušek 
+- Blog a recenze -> recenze našich žáků a aktuální informace o autoškole
+- Instruktoři -> představení našich instruktorů
 
 ---
 
@@ -67,16 +70,6 @@ Přehled cen jednotlivých kurzů ve formě tabulky:
 ---
 
 
-##  Přihláška
-Formulář pro přihlášení do kurzu obsahuje:
-- jméno a příjmení  
-- e-mail  
-- telefon  
-- výběr kurzu  
-- datum zahájení  
-- poznámku  
-- souhlas s podmínkami  
-- tlačítko pro odeslání  
 
 ---
 
@@ -96,12 +89,6 @@ Součástí je kontaktní formulář:
 
 ---
 
-##  FAQ (Často kladené otázky)
-Přehled nejčastějších dotazů:
-- Jak dlouho trvá kurz?  
-- Kolik stojí?  
-- Kolik jízd je v ceně?  
-- Co potřebuji k přihlášení?  
 
 ---
 
