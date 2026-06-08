@@ -1,4 +1,5 @@
-#  Autoškola Triumf – Návrh webových stránek -> https://rocnikovka-swa-2.vercel.app/
+#  Autoškola Triumf – Návrh webových stránek  
+https://rocnikovka-swa-2.vercel.app/
 
 ##  Úvod
 Tento projekt představuje návrh struktury webových stránek pro fiktivní autoškolu *Triumf*.  
